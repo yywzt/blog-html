@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/common.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet" >
+	<link href="css/login.css" rel="stylesheet" >
+	<style type="text/css">
+		.header .logo {
+			float: left;
+			display: inline-block;
+			margin-right: 20px;
+			margin-top: -10px;
+			color: #888;
+			line-height: 80px;
+			font-size: 30px;
+			white-space: nowrap;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body class="home blog columns-4">
+	<script src="js/canvas-nest.min.js" count="200" zindex="-2" opacity="0.5" color="47,135,193" type="text/javascript"></script>
+
+	<header class="header">
+		<div class="container clearfix">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar icon-bar-1"></span>
+					<span class="icon-bar icon-bar-2"></span>
+					<span class="icon-bar icon-bar-3"></span>
+				</button>
+				<a class="logo" href=""> BLOG </a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<nav class="navbar-left primary-menu">
+					<ul id="menu-justnews-menu" class="nav navbar-nav">
+						<li class="menu-item"><a href="index.html">首页</a></li>
+						<li class="dropdown menu-item">
+							<a href="article_list.html" class="dropdown-toggle" data-toggle="dropdown">文章</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">jmeter</a></li>
+								<li><a href="#">EJB</a></li>
+								<li><a href="#">Jasper Report</a></li>
+								<li class="divider"></li>
+								<li><a href="#">分离的链接</a></li>
+								<li class="divider"></li>
+								<li><a href="#">另一个分离的链接</a></li>
+							</ul>
+						</li>
+						</li>
+						<li class="menu-item"><a href="community.html">社区</a>
+						</li>
+						<li class="menu-item"><a href="blog.html">博客</a>
+							<!-- <ul role="menu" class=" dropdown-menu" style="display: none;">
+								<li class="menu-item"><a href="http://pan.baidu.com/s/1boHZF0j"> 获取本站安装包</a></li>
+								<li class="menu-item"><a href="http://git.oschina.net/duzhime/DUZHI_BLOG"> 获取本站源码包</a></li>
+							</ul> -->
+						</li>
+					</ul>
+				</nav>
+				<div class="navbar-action pull-right">
+					<form class="navbar-search" action="/s" method="get" role="search">
+						<input type="text" name="search_word" class="navbar-search-input" autocomplete="off" placeholder="输入关键词搜索..." value="">
+						<input type="hidden" name="c" class="navbar-search-input" placeholder="输入关键词搜索..." value="utf-8">
+						<a class="navbar-search-icon j-navbar-search" href="javascript:;" id="search"></a>
+					</form>
+					<div id="j-user-wrap">
+						<a id="userALogin" href="login.html" class="login cur ">登录</a>--&gt;
+						<a class="login cur" href="register.html">注册</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="wrap">
+		<!-- 主体 -->
+		<div class="container">
+		    <div class="row">
+		        <div class="col-md-offset-3 col-md-6" style="padding: 20px 0">
+		            <form class="form-horizontal">
+		                <span class="heading">用户登录</span>
+		                <div class="form-group">
+		                    <input type="text" class="form-control" id="inputEmail3" placeholder="用户名或电子邮件" required="required">
+		                    <i class="fa fa-user"></i>
+		                </div>
+		                <div class="form-group help">
+		                    <input type="password" class="form-control" id="inputPassword3" placeholder="密　码" required="required" >
+		                    <i class="fa fa-lock"></i>
+		                    <a href="#" class="fa fa-question-circle"></a>
+		                </div>
+		                <div class="form-group">
+		                    <div class="main-checkbox">
+		                        <input type="checkbox" value="None" id="checkbox1" name="check" />
+		                        <label for="checkbox1"></label>
+		                    </div>
+		                    <span class="text">记住我</span>
+		                    <button type="submit" class="btn btn-default">登录</button>
+		                </div>
+		                <div class="form-group" style="border-top: 1px solid #f0f0f0;">
+			                <div class="col-md-10 col-md-offset-1">
+				                <div class="col-md-6" >
+				                	<a href="#"><i class="fa fa-qq fa-2x" style="padding-top: 10px;"> QQ登录</i></a>
+				                </div>
+				                <div class="col-md-6" >
+				                	<a href="#"><i class="fa fa-weixin fa-2x" style="padding-top: 10px;"> 微信登录</i></a>
+				                </div>
+				            </div>
+				        </div>
+		            </form>
+		        </div>
+		    </div>
+		</div>
+	</div>
+
+	<!-- 底部 -->
+	<footer class="footer">
+		<div class="container">
+			<div class="clearfix">
+				<div class="footer-col footer-col-logo">
+
+				</div>
+				<div class="footer-col footer-col-copy">
+					<ul class="footer-nav">
+						<li id="menu-item-152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152">
+							<a href="">联系我们</a>
+						</li>
+						<li id="menu-item-157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-157">
+							<a href="">专题列表</a>
+						</li>
+						<li id="menu-item-129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-129">
+							<a href="">用户列表</a>
+						</li>
+					</ul>
+					<div class="copyright"> 		╭ァ 夜，寒似谁，未曾更变，不觉</div>
+				</div>
+				<div class="footer-col footer-col-sns">
+					<div class="footer-sns">
+						<a class="sns-wx" href="javascript:;">
+							<i class="fa fa-qq"></i>
+							<span style="background-image:url('img/qq.jpg');"></span>
+						</a>
+						<a class="sns-wx" href="javascript:;">
+							<i class="fa fa-weixin"></i>
+							<span style="background-image:url('img/weixin.jpg');"></span>
+						</a>
+						<a class="sns-wx" href="javascript:;">
+							<i class="fa fa-weibo"></i>
+							<span style="background-image:url('img/weibo.jpg');"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<div class="weather"><iframe width="250" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&amp;id=12&amp;icon=1&amp;num=1"></iframe></div>
+	
+	<div class="action" style="top: 74%;">
+		<div class="a-box gotop" id="gotop" style="display: none;">
+			
+		</div>
+	</div>
+	
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		/* 鼠标点击特效 */
+		var a_idx = 0;
+		jQuery(document).ready(function($) {
+		    $("body").click(function(e) {
+		var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+		var $i = $("<span/>").text(a[a_idx]);
+		        a_idx = (a_idx + 1) % a.length;
+		var x = e.pageX,
+		        y = e.pageY;
+		        $i.css({
+		"z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+		"top": y - 20,
+		"left": x,
+		"position": "absolute",
+		"font-weight": "bold",
+		"color": "#ff6651"
+		        });
+		        $("body").append($i);
+		        $i.animate({
+		"top": y - 180,
+		"opacity": 0
+		        },
+		        1500,
+		function() {
+		            $i.remove();
+		        });
+		    });
+		});
+	</script>
+</body>
+</html>
